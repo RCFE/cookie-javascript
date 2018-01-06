@@ -5,12 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Cookie测试</title>
   <link rel="stylesheet" href="">
-  <script src="/dist/Cookie.js"></script>
+  <script src="/dist/cookie.min.js"></script>
 </head>
 <body>
   <script>
      Cookie.set('test1', 'test1')
      Cookie.set('test2', 'test2', {expires: Infinity})
+     Cookie.set('test10', 'test10', {expires: 'Sat, 06 Jan 2020 16:19:38 GMT'})
+     Cookie.set('name', 'value', {expires: new Date()})
      Cookie.set('test3', '#test3?', {expires: 2, path: '/', domain: '127.0.0.1', secure: false})
      Cookie.set('test4', {a: 1, b: 2})
      Cookie.set('test5', 2)

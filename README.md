@@ -67,7 +67,10 @@ Cookie.set('object', {a: 1, b: 3})
 ```
 创建一个新的cookie，并且设置他的过期时间（`expires`）或者 （`max-age`），其中`expires`有3种类型的值：1、`Number`，2、`String`，3、`Date`
 其中`Number`类型的值分为两种情况:① `expires === Infinity`设置其永不过期；② `expires`等于一个整数，这个整数是以天为单位的
-而`max-age`是以秒为单位的
+而`max-age`是以秒为单位的。如果同时设置了`expires`和`max-age`目前大多数浏览器以`expires`为准
+如果设置`expires`为一个字符串，则其应该是一个绝对时间的字符串，比如`Sat, 06 Jan 2018 16:19:38 GMT`
+如果是一个`Date`类型，会将其转为`UTC`时间
+
 创建一个永不过期的`cookie`
 
 ```javascript
@@ -90,6 +93,16 @@ Cookie.set('name', 'value', {expires: 1})
 ```javascript
 
 Cookie.set('name', 'value', {maxAge: 24 * 60 * 60})
+
+```
+
+设置`expires`为一个时间字符串或者`Date`对象
+
+```
+
+Cookie.set('name', 'value', {expires: 'Sat, 06 Jan 2020 16:19:38 GMT'})
+
+Cookie.set('name', 'value', {expires: new Date()})
 
 ```
 
