@@ -1,6 +1,6 @@
 {
   "name": "cookie-javascript",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "一个浏览器端操作cookie的库",
   "main": "src/cookie.js",
   "scripts": {
