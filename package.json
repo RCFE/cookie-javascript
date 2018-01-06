@@ -12,12 +12,12 @@
     "Cookie.js",
     "cookie.js"
   ],
-  "author": "dione2016",
+  "author": "RCFE",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dione2016/util/issues"
+    "url": "https://github.com/RCFE/Cookie/issues"
   },
-  "homepage": "https://github.com/dione2016/util#readme",
+  "homepage": "https://github.com/RCFE/Cookie#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.1.2",

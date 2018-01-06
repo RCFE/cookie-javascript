@@ -8,7 +8,7 @@ module.exports = {
   devtool:'cheap-module-source-map',
   output: {
     path: resolve('dist'),
-    filename: 'Cookie.js',
+    filename: 'Cookie.min.js',
     library: 'Cookie',
     libraryTarget: 'umd',
     libraryExport: 'default'
