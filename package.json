@@ -1,0 +1,37 @@
+{
+  "name": "Cookie",
+  "version": "0.0.1",
+  "description": "一个浏览器端操作cookie的库",
+  "main": "src/Cookie.js",
+  "scripts": {
+    "build": "webpack -p"
+  },
+  "keywords": [
+    "cookie",
+    "Cookie",
+    "Cookie.js",
+    "cookie.js"
+  ],
+  "author": "dione2016",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dione2016/util/issues"
+  },
+  "homepage": "https://github.com/dione2016/util#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.1.2",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "eslint": "^4.14.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "webpack": "^3.10.0"
+  }
+}

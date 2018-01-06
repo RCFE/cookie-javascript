@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cookie测试</title>
+  <link rel="stylesheet" href="">
+  <script src="/dist/Cookie.js"></script>
+</head>
+<body>
+  <script>
+     Cookie.set('test1', 'test1')
+     Cookie.set('test2', 'test2', {expires: Infinity})
+     Cookie.set('test3', '#test3?', {expires: 2, path: '/', domain: '127.0.0.1', secure: false})
+     Cookie.set('test4', {a: 1, b: 2})
+     Cookie.set('test5', 2)
+     Cookie.set('test6', '%u5317')
+     console.log(Cookie.get('test1'))
+     console.log(Cookie.get('test4', {json: true}))
+     console.log(Cookie.get('test5', {json: true}))
+     console.log(Cookie.get('test6'))
+     console.log(Cookie.get())
+     console.log(Cookie.get({json: true}))
+     Cookie.remove('test1')
+     Cookie.remove('test3', {path: '/'})
+     // Cookie.remove()
+     var cookie = Cookie.withConverter(function (name, value) {
+      if (name === 'test6') {
+        return unescape(value)
+      }
+     })
+     console.log(cookie.get('test6'))
+
+     var cookie2 = Cookie.withConverter({
+      read: function (name, value) {
+        if (name === 'test7') {
+          return value  // 注意此时get方法返回的值不会与浏览器cookie存储的值一样
+        }
+      },
+      write: function (key, vaule) {
+        return 22222
+      }
+     })
+
+     cookie2.set('test7', 22222)
+     console.log(cookie2.get('test7', {json: true}))
+  </script>
+</body>
+</html>
