@@ -12,11 +12,11 @@
 
 ### 直接下载
 
-在[这里](https://github.com/Cookie/Cookie)下载，然后在html里面通过script标签引入
+在[这里](https://github.com/RCFE/cookie-javascript)下载，然后在html里面通过script标签引入
 
 ```html
 
-<script src="path/to/Cookie"></script>
+<script src="path/to/cookie.min.js"></script>
 
 ```
 
@@ -36,11 +36,11 @@ npm install Cookie
 ```javascript
 # CommonJs
 
-const Cookie = require('Cookie')
+const Cookie = require('cookie-javascript')
 
 # ES6
 
-import Cookie from 'Cookie'
+import Cookie from 'cookie-javascript'
 
 ```
 

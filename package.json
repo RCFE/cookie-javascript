@@ -1,23 +1,29 @@
 {
-  "name": "Cookie",
-  "version": "0.0.1",
+  "name": "cookie-javascript",
+  "version": "0.0.2",
   "description": "一个浏览器端操作cookie的库",
-  "main": "src/Cookie.js",
+  "main": "src/cookie.js",
   "scripts": {
     "build": "webpack -p"
   },
   "keywords": [
     "cookie",
-    "Cookie",
-    "Cookie.js",
-    "cookie.js"
+    "cookies",
+    "cookie.js",
+    "cookie-js",
+    "cookie-javascript",
+    "browser-cookie"
   ],
   "author": "RCFE",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/RCFE/Cookie/issues"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RCFE/cookie-javascript.git"
   },
-  "homepage": "https://github.com/RCFE/Cookie#readme",
+  "bugs": {
+    "url": "https://github.com/RCFE/cookie-javascript/issues"
+  },
+  "homepage": "https://github.com/RCFE/cookie-javascript#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.1.2",

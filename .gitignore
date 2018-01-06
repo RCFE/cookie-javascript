@@ -1,6 +1,6 @@
 .DS_Store
 .idea/
 node_modules/
-dist/Cookie.min.js.map
+dist/cookie.min.js.map
 npm-debug.log*
 

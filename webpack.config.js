@@ -4,11 +4,11 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const resolve = dir => path.resolve(__dirname, dir)
 
 module.exports = {
-  entry: resolve('src/Cookie.js'),
+  entry: resolve('src/cookie.js'),
   devtool:'cheap-module-source-map',
   output: {
     path: resolve('dist'),
-    filename: 'Cookie.min.js',
+    filename: 'cookie.min.js',
     library: 'Cookie',
     libraryTarget: 'umd',
     libraryExport: 'default'
