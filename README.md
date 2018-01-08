@@ -27,7 +27,7 @@
 
 ```bash
 
-npm install Cookie
+npm install cookie-javascript -S
 
 ```
 
